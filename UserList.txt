@@ -1,0 +1,9 @@
+colby:offline;2
+janelle:offline;6
+devon:offline;3
+brad:offline;60403
+fred:offline;60962
+franco:offline;1
+samara:offline;5
+carlos:offline;8
+nathan:offline;7

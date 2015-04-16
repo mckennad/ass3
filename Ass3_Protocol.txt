@@ -1,0 +1,44 @@
+Devon McKenna
+#4330241
+CS3130
+Assignment 3 - Protocol
+______________________________________________________
+
+
+SERVER                                                              CLIENT
+
+*Setup                                                              *Setup/(socket,hostname,connect,delay,etc.)
+*Listen                                                             *After connect, encode/send "" to server
+                                                                                    |
+       _____________________________________________________________________________|
+      |
+*Recv/decode
+*Send "Welcome to MMS. \n"                                          *Recv and print
+        |                                                                  |
+        |__________________________________________________________________|
+
+
+SESSION BEGINS
+
+*Listen                                                             *Ask for user input
+*Recv/decode  <---------------------------------------------------- *encode/send
+*Compare text to list of commands                                   *Recv and print
+    ^help                                                                   |
+    ^signin                                                                 |
+    ^whoIson                                                                |
+    ^send                                                                   |
+    ^signout                                                                |
+    ^exit                                                                   |
+*Send appropriate text                                                      |
+        |                                                                   |
+        |___________________________________________________________________|
+
+                                                                    *If signout text is recv'd, END SESSION, otherwise loop
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+I have more detail written on each method called by commands if needed, not sure how detailed you want protocol or even what format.
+
+++++++++++++++++++++++++++++++++++++++++++++++++
